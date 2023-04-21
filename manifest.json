@@ -1,0 +1,27 @@
+{
+    "name": "NER Highlighter",
+    "manifest_version": 2,
+    "version": "1.0",
+    "description": "A Chrome extension that performs NER on webpage text and highlights the named entities",
+    "content_scripts": [
+        {
+          "matches": ["<all_urls>"],
+          "js": ["content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "permissions": [
+      "activeTab",
+      "contextMenus",
+      "storage",
+      "http://localhost:8000/*"
+    ],
+    "browser_action": {
+        "default_title": "Entity Highlighter",
+        "default_popup": "popup.html"
+    }
+  }
+  
+  

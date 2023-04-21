@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NER Popup</title>
+  <style>
+    #entity-text-box {
+      width: 100%;
+      height: 300px;
+      resize: none;
+      font-family: monospace;
+    }
+  </style>
+</head>
+<body>
+  <h1>Named Entity Recognition</h1>
+
+  <div style="display: flex;">
+    <div>
+      <h2>Names</h2>
+      <div style="flex: 1;">
+        <textarea id="names-box" rows="30" cols="15"></textarea>
+      </div>
+    </div>
+    <div>
+      <h2>Dates</h2>
+      <div style="flex: 1;">
+        <textarea id="dates-box" rows="30" cols="15"></textarea>
+      </div>
+    </div>
+    <div>
+      <h2>Locations</h2>
+      <div style="flex: 1;">
+        <textarea id="locs-box" rows="30" cols="15"></textarea>
+      </div>
+    </div>
+    <div>
+      <h2>Organizations</h2>
+      <div style="flex: 1;">
+        <textarea id="org-box" rows="30" cols="15"></textarea>
+      </div>
+    </div>
+    <div>
+      <h2>Other</h2>
+      <div style="flex: 1;">
+        <textarea id="other-box" rows="30" cols="15"></textarea>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="popup.js"></script>
+</body>
+</html>
